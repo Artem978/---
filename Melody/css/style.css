@@ -1,3 +1,12 @@
+@font-face {
+    font-family: "Bebas Neue";
+    src: local("BebasNeueRegular"), url("../fonts/BebasNeueRegular.woff2") format("woff2"),
+      url("../fonts/BebasNeueRegular.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+  
 *{
     box-sizing: border-box;
 }
@@ -13,10 +22,12 @@ a{
     text-decoration: none;
     color: #fff;
 }
+/*header*/
 .header{
     background-color: #635854;
     color: #fff;
     border-bottom: 4px solid #3596F5;
+    margin-bottom: 58px;
 }
 
 .header-navbar{
@@ -53,4 +64,89 @@ a{
     font-weight: 700;
     font-size: 17px;
     line-height: 20px;
+}
+/*/header*/
+/*main*/
+.main{
+    display:flex;
+    margin-bottom: 99px;
+}
+.main-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+.home-image path{
+    opacity: 0;
+}
+.home-image path:hover{
+    opacity: 0.75;
+    cursor: pointer;
+}
+.main-info-header{
+    font-family: Bebas Neue, serif;
+    font-size: 30px;
+    line-height: 44px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #635854;
+}
+.main-counter-group{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.counter-button{
+    border:none;
+    background-color: #fff;
+    cursor: pointer;
+}
+.arrow-down{
+    transform: rotateX(180deg);
+}
+.main-counter-group span{
+    font-size: 57px;
+    color:#635854;
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+.show-button{
+    background: #3596F5;
+    border-radius: 6px;
+    border:none;
+    padding: 16px 36px;
+    font-size: 16px;
+    line-height: 19px;
+    color:#fff;
+    cursor: pointer;
+}
+.footer{
+    background-color:#D7D7D7;
+    border-top: 4px solid #3596F5;
+    padding-top: 62px;
+    padding-bottom: 68px;
+}
+.footer-navigation{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.footer-contacts-text{
+    color:#635854;
+    margin-bottom: 5px;
+}
+.footer-contacts-link{
+    color:#635854;
+}
+.socials-link{
+    margin-right: 15px;
+}
+.footer-navigation-link{
+    margin-right: 20px;
+    font-size: 16px;
+    line-height: 19px;
+    text-decoration-line: underline;
+    color: #635854;
 }
