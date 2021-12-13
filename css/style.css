@@ -85,6 +85,9 @@ a{
     opacity: 0.75;
     cursor: pointer;
 }
+.home-image .current-floor{
+    opacity: 0.75; 
+}
 .main-info-header{
     font-family: Bebas Neue, serif;
     font-size: 30px;
